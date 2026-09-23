@@ -1,6 +1,6 @@
 :root {
-  --brand: #c0392b;
-  --brand-dark: #922b21;
+  --brand: #A91D31;
+  --brand-dark: #7E1626;
   --ink: #1f2328;
   --muted: #5b6169;
   --bg: #ffffff;
@@ -45,13 +45,16 @@ a { color: var(--brand); text-decoration: none; }
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--ink);
-  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.logo span { color: var(--brand); }
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
 
 .nav a {
   margin-left: 28px;
