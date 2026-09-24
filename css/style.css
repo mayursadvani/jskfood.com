@@ -337,6 +337,25 @@ a { color: var(--brand); text-decoration: none; }
   font-size: 36px;
 }
 
+/* Page banner photo */
+.page-banner { padding: 40px 0 0; }
+.page-banner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.page-banner-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+}
+@media (max-width: 720px) {
+  .page-banner-grid { grid-template-columns: 1fr; }
+  .page-banner-grid img { height: 180px; }
+}
+
 /* Content */
 .content { padding: 60px 0; }
 
@@ -518,6 +537,64 @@ a { color: var(--brand); text-decoration: none; }
   object-fit: contain;
 }
 
+/* Clients */
+.clients {
+  padding: 72px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  background: #fff;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.client-tile {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.client-tile img {
+  max-width: 100%;
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.client-tile-text {
+  flex-direction: column;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--brand);
+  letter-spacing: -0.01em;
+}
+
+.client-tile-text span {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 2px;
+}
+
 /* Footer */
 .site-footer {
   background: var(--ink);
@@ -554,5 +631,6 @@ a { color: var(--brand); text-decoration: none; }
   .contact-grid { grid-template-columns: 1fr; }
   .product-grid { grid-template-columns: 1fr; }
   .brands-grid { grid-template-columns: repeat(2, 1fr); }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .nav a { margin-left: 16px; font-size: 14px; }
 }
