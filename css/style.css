@@ -394,6 +394,39 @@ a { color: var(--brand); text-decoration: none; }
 
 .content h2 { color: var(--brand); margin-top: 40px; font-weight: 700; }
 
+/* Map embed */
+.map-embed {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+/* FAQ */
+.faq { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+.faq details {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  float: right;
+  color: var(--brand);
+  font-weight: 800;
+  font-size: 18px;
+}
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { margin: 12px 0 0; color: var(--muted); }
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -463,6 +496,24 @@ a { color: var(--brand); text-decoration: none; }
   border-radius: 999px;
   padding: 4px 12px;
 }
+
+.product-enquire {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f8b4c;
+}
+.product-enquire::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../assets/icons/whatsapp-glyph.svg") no-repeat center / contain;
+  filter: invert(45%) sepia(70%) saturate(500%) hue-rotate(90deg) brightness(0.9);
+}
+.product-enquire:hover { text-decoration: underline; }
 
 /* Showcase */
 .showcase { padding: 20px 0 76px; }
