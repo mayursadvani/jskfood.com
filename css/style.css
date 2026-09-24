@@ -268,6 +268,37 @@ a { color: var(--brand); text-decoration: none; }
 
 .btn-outline:hover { background: var(--brand); color: #fff; transform: translateY(-2px); }
 
+/* Stats */
+.stats { padding: 0 0 60px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stat-number {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  color: var(--brand);
+  letter-spacing: -0.01em;
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+@media (max-width: 720px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 16px; }
+}
+
 /* Features */
 .features { padding: 80px 0; }
 
