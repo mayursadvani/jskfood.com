@@ -14,8 +14,8 @@
     </linearGradient>
   </defs>
 
-  <!-- Twin-leaf sprout -->
-  <g transform="translate(58,8)">
+  <!-- Twin-leaf sprout, centered directly above the J -->
+  <g transform="translate(165,0) scale(0.75)">
     <path d="M2 62 C -4 40, 4 16, 26 0 C 30 22, 26 44, 8 60 C 6 61, 4 62, 2 62 Z" fill="url(#leafGrad1)"/>
     <path d="M22 66 C 18 48, 24 30, 40 18 C 43 34, 40 52, 26 66 C 25 67, 23 67, 22 66 Z" fill="url(#leafGrad2)"/>
     <path d="M6 58 C 10 46, 16 34, 24 24" stroke="#4C8A1F" stroke-width="2.2" stroke-linecap="round" fill="none"/>
