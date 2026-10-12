@@ -622,7 +622,7 @@ a { color: var(--brand); text-decoration: none; }
 }
 
 .brands-grid img.brand-logo-lg {
-  max-height: 84px;
+  max-height: 58px;
 }
 
 /* Fleet gallery */
